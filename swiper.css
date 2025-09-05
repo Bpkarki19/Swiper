@@ -59,3 +59,20 @@ h1 {
 .swiper-pagination-bullet-active {
   background-color: #007bff;
 }
+.grid-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .swiper-container {
+    display: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "grid-item grid-item grid-item "
+      "grid-item grid-item grid-item";
+    grid-gap: 20px;
+  }
+}
