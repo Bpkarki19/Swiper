@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper.js Country List</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="swiper.css" />
+  </head>
+  <body>
+    <h1>Repair of equipments of various brands.</h1>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/1.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/2.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/3.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/4.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/5.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/6.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/7.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/8.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="company-logo">
+            <img class="image logo" src="./images/9.png" />
+            <img class="image go" src="./images/go.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Link Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1.5,
+        spaceBetween: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
