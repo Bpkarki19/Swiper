@@ -86,8 +86,13 @@ h1 {
   }
 
   .read-more {
-    display: flex;
-    margin-top: 20px;
+    background-color: transparent; /* Makes the background invisible */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    padding: 0; /* Remove any default padding */
+    /* You might want to add some spacing between the image and text if needed */
+    display: flex; /* Aligns the image and text horizontally */
+    align-items: center; /* Vertically centers the image and text */
   }
 
   span {
@@ -102,5 +107,15 @@ h1 {
       "grid-item grid-item grid-item grid-item"
       "grid-item grid-item grid-item grid-item";
     grid-gap: 20px;
+  }
+
+  .read-more {
+    background-color: transparent; /* Makes the background invisible */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    padding: 0; /* Remove any default padding */
+    /* You might want to add some spacing between the image and text if needed */
+    display: flex; /* Aligns the image and text horizontally */
+    align-items: center; /* Vertically centers the image and text */
   }
 }

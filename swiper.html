@@ -10,6 +10,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="swiper.css" />
+    <script src="swiper.js" defer></script>
   </head>
   <body>
     <h1>Repair of equipments of various brands.</h1>
@@ -126,9 +127,9 @@
           </div>
         </div>
       </div>
-      <div class="read-more">
+      <button id="my_button" class="read-more">
         <img src="./images/read_more.svg" alt="Read More" /> <span>more</span>
-      </div>
+      </button>
     </div>
 
     <!-- Link Swiper's JS -->
@@ -136,23 +137,25 @@
     <script>
       var swiper = new Swiper(".swiper-container", {
         slidesPerView: 1.5,
-        spaceBetween: 1,
+        spaceBetween: 10,
+        loop: true,
+        freeMode: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         breakpoints: {
-          420: {
+          320: {
             slidesPerView: 1.5,
-            spaceBetween: 1,
+            spaceBetween: 10,
           },
           620: {
             slidesPerView: 1.9,
-            spaceBetween: 1,
+            spaceBetween: 10,
           },
           720: {
             slidesPerView: 2.2,
-            spaceBetween: 1,
+            spaceBetween: 10,
           },
         },
       });
