@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const myButton = document.getElementById('my_button');
-  const moreBrands = document.querySelector('.more--brands');
-  const computedStyle = window.getComputedStyle(moreBrands);
-  if (myButton) {
-    myButton.addEventListener('click', function() {
-      alert('Button clicked!');
-      const display =
+  const toggleButton = document.getElementById('toggle_button');
+  const moreBrands = document.querySelectorAll('.grid-item.hidden');
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      const isHidden = moreBrands[0] && moreBrands[0].classList.contains('hidden');
+
+      moreBrands.forEach(brand => {
+        if (isHidden) {
+          brand.classList.remove('hidden');
+        } else {
+          brand.classList.add('hidden');
+        }
+      });
+
+      if (isHidden) {
+        toggleButton.querySelector('span').textContent = 'Show Less';
+      } else {
+        toggleButton.querySelector('span').textContent = 'Show More';
+      }
     });
-  } else {
-    console.error('Button with id "my_button" not found.');
   }
 });

@@ -1,0 +1,39 @@
+// This is just a example to show hide and show functionality
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleButton">Show All</button>
+    <div id="linksContainer" class="hidden">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const linksContainer = document.getElementById("linksContainer");
+
+      toggleButton.addEventListener("click", () => {
+        const isHidden = linksContainer.classList.contains("hidden");
+
+        if (isHidden) {
+          // Show links
+          linksContainer.classList.remove("hidden");
+          toggleButton.textContent = "Hide";
+        } else {
+          // Hide links
+          linksContainer.classList.add("hidden");
+          toggleButton.textContent = "Show All";
+        }
+      });
+    </script>
+  </body>
+</html>
