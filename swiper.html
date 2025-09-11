@@ -13,145 +13,150 @@
     <script src="swiper.js" defer></script>
   </head>
   <body>
-    <h1>Repair of equipments of various brands.</h1>
     <div class="container">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="company-logo">
+      <div class="sub-container">
+        <h1>Repair of equipments of various brands.</h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/1.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/2.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/3.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/4.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/5.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/6.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/7.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/8.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="company-logo">
+                <img class="image logo" src="./images/9.png" />
+                <img class="image go" src="./images/go.svg" />
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="grid-container-wrapper">
+          <div class="grid-container">
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/1.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/2.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/3.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/4.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/5.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
               <img class="image logo" src="./images/6.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
+
+            <div class="grid-item company-logo">
+              <img class="image logo" src="./images/7.png" />
+              <img class="image go" src="./images/go.svg" />
+            </div>
+
+            <div class="grid-item company-logo">
+              <img class="image logo" src="./images/8.png" />
+              <img class="image go" src="./images/go.svg" />
+            </div>
+
+            <div class="grid-item company-logo hidden">
+              <img class="image logo" src="./images/9.png" />
+              <img class="image go" src="./images/go.svg" />
+            </div>
+
+            <div class="grid-item company-logo hidden">
+              <img class="image logo" src="./images/6.png" />
+              <img class="image go" src="./images/go.svg" />
+            </div>
+
+            <div class="grid-item company-logo hidden">
               <img class="image logo" src="./images/7.png" />
               <img class="image go" src="./images/go.svg" />
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
-              <img class="image logo" src="./images/8.png" />
-              <img class="image go" src="./images/go.svg" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="company-logo">
-              <img class="image logo" src="./images/9.png" />
-              <img class="image go" src="./images/go.svg" />
-            </div>
-          </div>
+          <button id="toggle_button" class="read-more">
+            <img src="./images/read_more.svg" alt="Read More" />
+            <span>more</span>
+          </button>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+
+        <!-- Link Swiper's JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: true,
+            freeMode: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
       </div>
 
-      <div class="grid-container-wrapper">
-        <div class="grid-container">
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/1.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/2.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/3.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/4.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/5.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/6.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/7.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo">
-            <img class="image logo" src="./images/8.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo hidden">
-            <img class="image logo" src="./images/9.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo hidden">
-            <img class="image logo" src="./images/6.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-
-          <div class="grid-item company-logo hidden">
-            <img class="image logo" src="./images/7.png" />
-            <img class="image go" src="./images/go.svg" />
-          </div>
-        </div>
-        <button id="toggle_button" class="read-more">
-          <img src="./images/read_more.svg" alt="Read More" /> <span>more</span>
-        </button>
-      </div>
-
-      <!-- Link Swiper's JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".swiper-container", {
-          slidesPerView: "auto",
-          spaceBetween: 10,
-          loop: true,
-          freeMode: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
+      <!--container ends-->
     </div>
   </body>
 </html>
