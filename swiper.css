@@ -12,6 +12,11 @@ body {
   align-items: center;
   overflow-x: hidden;
 }
+.top-border {
+  width: 100%;
+  height: 1px;
+  background-color: #d9fff5; /* Blue color */
+}
 .container {
   display: flex;
   flex-direction: column;
