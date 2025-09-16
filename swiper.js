@@ -15,16 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
       moreBrands.forEach(brand => {// iterating over each element in the moreBrands NodeList.
         if (isHidden) {
           brand.classList.remove('hidden');
+          toggleButton.querySelector('span').textContent = 'Show Less'
         } else {
           brand.classList.add('hidden');
+          toggleButton.querySelector('span').textContent = 'Show More';
         }
       });
 
-      if (isHidden) {
-        toggleButton.querySelector('span').textContent = 'Show Less';
-      } else {
-        toggleButton.querySelector('span').textContent = 'Show More';
-      }
+       
     });
   }
 });
