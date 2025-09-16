@@ -109,7 +109,8 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .swiper-container {
+  .swiper-container,
+  .hidden-for--tablet {
     display: none;
   }
 
@@ -156,7 +157,8 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .grid-container {
+  .grid-container,
+  .hidden-for--tablet {
     display: grid;
     grid-template-areas:
       "grid-item grid-item grid-item grid-item"
