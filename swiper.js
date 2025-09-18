@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.getElementById('toggle_button');
+  const toggleButton = document.getElementById('toggle__button');
   const moreBrands = document.querySelectorAll('.grid-item.hidden');
   console.log(moreBrands);
   //moreBrands is a NodeList of all elements with the class 'grid-item' and 'hidden'. it behaves like an array of DOM elements.
